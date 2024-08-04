@@ -1,0 +1,275 @@
+#add-friend-dialog-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background:  rgba(0, 0, 0, 0.4);
+}
+
+.add-friend-dialog {
+    width: 45%;
+    height: 85%;
+    background: white;
+    border-radius: 10px;
+}
+
+.add-friend-dialog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    row-gap: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(146, 146, 228);
+    border-bottom: solid 1px rgb(226, 224, 224);
+}
+
+.add-friend-dialog-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    row-gap: 5%;
+}
+
+.dialog-user-close-button {
+    height: 50%;
+    width: 40%;
+    border-radius: 5px;
+    border: solid 1px rgb(226, 224, 224);
+    color: white;
+    background-color: rgb(235, 77, 77);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.dialog-user-close-button:hover {
+    background-color: rgb(233, 111, 111);
+}
+
+
+.add-friend-dialog-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+}
+
+.add-friend-dialog-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+}
+
+.dialog-id-nickname {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 2%;
+}
+
+.dialog-user-id {
+    height: 100%;
+    width: 28%;
+}
+
+.dialog-user-nickname {
+    height: 100%;
+    width: 65%;
+}
+
+.dialog-user-label {
+    height: 10%;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.dialog-user-input {
+    height: 50%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: solid 1px rgb(226, 224, 224);
+    border-radius: 5px;
+    color: rgb(171, 171, 171);
+    outline: none;
+}
+
+.dialog-email-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.dialog-email {
+    height: 100%;
+    width: 95%;
+}
+
+.dialog-search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.dialog-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 95%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.dialog-search-button {
+    height: 60%;
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.list-friend-area {
+    height: 85%;
+    width: 95%;
+}
+
+.users-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    border: solid 1px rgb(226, 224, 224);
+    border-radius: 5px;
+    row-gap: 5px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.user-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgb(226, 224, 224);
+    border-radius: 5px;
+    height: 12%;
+    width: 97%;
+    margin-top: 1%;
+}
+
+.user-list-item-photo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+
+.user-list-item-name-area {
+    height: 100%;
+    width: 70%;
+}
+
+.user-list-item-button-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+}
+
+.dialog-user-photo-list-item {
+    border-radius: 100%;
+    height: 90%;
+    width: 90%;
+}
+
+.dialog-user-name-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 16px;
+    color: rgb(171, 171, 171);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1%;
+    height: 100%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.user-list-send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    height: 70%;
+    border: solid 1px rgb(226, 224, 224);
+    border-radius: 5px;
+    outline: none;
+    background: rgb(102, 229, 131);
+}
+
+.dialog-list-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 95%;
+    column-gap: 1%;
+}
+
+.dialog-user-pagination-button {
+    height: 100%;
+    width: 5%;
+    background: transparent;
+    border: none;
+}

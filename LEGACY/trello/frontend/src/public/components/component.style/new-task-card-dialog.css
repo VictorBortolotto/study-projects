@@ -1,0 +1,231 @@
+#new-task-card-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.new-task-card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 65%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.new-task-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(146, 146, 228);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.new-task-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+}
+
+.new-task-card-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75%;
+  width: 100%;
+  row-gap: 5px;
+}
+
+.task-name-field {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  height: 10%;
+  width: 95%;
+  border-radius: 3px;
+  border: solid rgb(164, 164, 164) 1px;
+  outline: none;
+}
+
+#new-task-description {
+  height: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+.task-name-label {
+  text-justify: initial;
+  width: 95%;
+  font-size: 15px;
+  color: rgb(164, 164, 164);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-show-calendar {
+  height: 100%;
+  width: 10%;
+  border: none;
+  background: white;
+  border-radius: 3px;
+  border: solid rgb(164, 164, 164) 1px;
+  padding: 0px 0px 0px 0px;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.calendar-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
+  outline: none;
+  padding: 0px 0px 0px 0px;
+  border-radius: 3px;
+  border: solid rgb(164, 164, 164) 1px;
+  font-size: 15px;
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: white;
+}
+
+.calendar-buttons-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  column-gap: 5px;
+}
+
+.calendar-button {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 47.5%;
+}
+
+.calendar-button-title {
+  display: flex; 
+  width: 50%; 
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(164, 164, 164);
+}
+
+.calendar-button-titles {
+  display: flex;
+  flex-direction: row; 
+  width: 95%;
+  column-gap: 5px;
+}
+
+.new-task-card-footer {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.new-task-card-cancel-button {
+  height: 50%;
+  width: 30%;
+  background-color: rgb(235, 77, 77);
+  color: white;
+  border: solid rgb(226, 224, 224) 1px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.new-task-card-create-button {
+  height: 50%;
+  width: 30%;
+  background-color: rgb(102, 229, 131);
+  color: white;
+  border: solid rgb(226, 224, 224) 1px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.calendar-options-area {
+  display: block;
+  flex-direction: column;
+  height: 10%;
+  width: 95%;
+}
+
+.priority-field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: initial;
+  height: 90%;
+  width: 49%;
+  border-radius: 3px;
+  font-size: 15px;
+  border: solid rgb(164, 164, 164) 1px;
+  outline: none;
+}
+
+.priority-list-area {
+  display: none;
+  position: absolute;
+  width: 23%;
+  margin-left: 4px;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: solid rgb(164, 164, 164) 1px;
+  background: white;
+}
+
+.priority-options {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  row-gap: 1px;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.priority-option {
+  display: flex;
+  height: 25%;
+  width: 99%;
+  align-items: center;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 3px;
+}
+
+.priority-option:hover {
+  background:  rgba(130, 130, 224, 0.4);
+  color: white;   
+}

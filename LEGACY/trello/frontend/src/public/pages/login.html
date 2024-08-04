@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="container" id="main-area">
+        <div class="frame">
+            <header class="header">
+                <img src="../assets/logo.png" alt="logo" class="logo">
+            </header>
+            <section class="section">
+                <input type="text" id="email-field" class="input" placeholder="Email">
+                <input type="password" id="password-field" class="input" placeholder="Password">
+                <input type="password" id="confirm-password-field" class="input" placeholder="Confirm Password">
+                <div class="checkbox-area">
+                    <input type="checkbox" class="save-password">
+                    <label for="" class="label">Save Password</label>
+                </div>
+                <button class="button" id="login-button" onclick="onClickButton()">
+                    LOGIN
+                </button>
+            </section>
+            <footer class="footer">
+                <div class="message" id="alert-content">
+                    <h6 class="text" id="alert" hidden></h6>
+                </div>
+                <div class="link-area" id="recover-password">
+                    <a href="http://" class="link">Forgot Password?</a>
+                </div>
+                <div class="link-area" id="sign-area">
+                    <a href="javascript:void(0);" class="link" onclick="onClickLinkSignUp()">Sign Up</a>
+                </div>
+                <div class="link-area-sign" id="back-to-login">
+                    <a href="javascript:void(0);" class="link" onclick="onClickLinkLogin()">Login</a>
+                </div>
+            </footer>
+        </div>
+        <div class="image">
+            <img src="../assets/image.png" alt="" class="images">
+        </div>
+    </div>
+    <script src="../js/utils/string.utils.js"></script>
+    <script src="../js/common/login.js"></script>
+    <script src="../js/services/login.services.js"></script>
+    <script src="../js/utils/cookies.js"></script>
+    <script src="../js/services/routes.services.js"></script>
+    <script src="../js/services/methods.js"></script>
+</body>
+</html>

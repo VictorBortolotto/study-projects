@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/lists.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../components/component.style/list.css">
+    <link rel="stylesheet" href="../components/component.style/card.css">
+    <link rel="stylesheet" href="../components/component.style/create-task-list-dialog.css">
+    <link rel="stylesheet" href="../components/component.style/snackbar.css">
+    <link rel="stylesheet" href="../components/component.style/add-friend-dialog.css">
+    <link rel="stylesheet" href="../components/component.style/navigation.css">
+    <link rel="stylesheet" href="../components/component.style/calendar.css">
+    <link rel="stylesheet" href="../components/component.style/new-task-card-dialog.css">
+    <title>My Lists</title>
+</head>
+<body>
+    <div class="container" id="main-container">
+        <header class="header">
+            <div class="logo">
+                <img src="../assets/logo-white.png" alt="" class="image-logo" onclick="onClickButtonHome()">
+            </div>
+            <div class="header-section">
+
+            </div>
+            <div class="user">
+                <img src="../assets/user.png" alt="" class="user-image" id="nav-user-perfil-photo" onclick="onClickPerfilPhoto()">
+            </div>
+        </header>
+        <section class="section">
+            <div class="lists-container" id="lists-container-area">
+                <ol class="tasks-lists-container" id="task-lists-area">
+                   
+                </ol>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="float-action-button">
+                <button class="add-new-list" id="button-new-task-list"  onclick="openDialogCreateTaskList(this.id)">
+                    <img src="../icons/plus-white.svg" alt="" class="new-list-icon">
+                </button>
+            </div>
+        </footer>
+    </div>
+    <div id="new-task-card-container"></div>
+    <div id="navigation-container"></div>
+    <div id="task-list-container"></div>
+    <div id="add-friend-dialog-container"></div>
+    <script>
+        let carrousel = document.getElementById('task-lists-area')
+        carrousel.addEventListener("wheel", function (e) {
+            if (e.deltaY >= 0) {
+                carrousel.scrollLeft -= 10;
+            } 
+            
+            if(e.deltaY <= 0){ 
+                carrousel.scrollLeft += 10;
+            }
+
+            if (e.deltaX >= 0) {
+                carrousel.scrollLeft -= 10;
+            } 
+            
+            if(e.deltaX <= 0){ 
+                carrousel.scrollLeft += 10;
+            }
+        });
+    </script>
+    <script src="../js/utils/string.utils.js"></script>
+    <script src="../js/common/lists.js"></script>
+    <script src="../js/services/lists.services.js"></script>
+    <script src="../js/services/task.service.js"></script>
+    <script src="../js/services/routes.services.js"></script>
+    <script src="../js/services/user.services.js"></script>
+    <script src="../js/services/methods.js"></script>
+    <script src="../js/utils/cookies.js"></script>
+    <script src="../components/component/create.task.list.dialog.js"></script>
+    <script src="../components/component/new-task-card-dialog.js"></script>
+    <script src="../components/component/navigation.js"></script>
+    <script src="../components/component/snackbar.js"></script>
+    <script src="../components/component/add.friend.dialog.js"></script>
+    <script src="../components/component/task.list.js"></script>
+    <script src="../components/component/calendar.js"></script>
+    <script src="../components/component/card.js"></script>
+    <script>
+        onClickKeyEscNewTaskListDialog()
+        onClickKeyEscNewTaskCardDialog()
+        fillPhoto()
+        createSnackBarOn('main-container')
+        onOpenTaskLists()
+    </script>
+</body>
+</html>

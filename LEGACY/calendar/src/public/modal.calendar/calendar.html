@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../modal.calendar/calendar.css">
+  <link rel="stylesheet" href="../snackbar/snackbar.css">
+  <link rel="stylesheet" href="../modal.calendar/modal.style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+</head>
+<body>
+  <div class="container">
+    <section class="section">
+      <dialog class="modal" id="calendar-modal"></dialog>
+    </section>
+    <footer class="footer">
+      <button class="activate-modal" onclick="onClickShowCalendar()">
+        <img src="../assets/calendar.svg" alt="" srcset="">
+      </button>
+    </footer>
+    <div id="snackbar"></div>
+  </div>
+  <script src="../js/calendar.js"></script>
+  <script src="../modal.calendar/calendar.component.js"></script>
+  <script src="../snackbar/snackbar.js"></script>
+</body>
+</html>
