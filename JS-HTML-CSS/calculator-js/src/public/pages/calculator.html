@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/calculator.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="display-area">
+        <input type="text" id="display" readonly>
+      </div>
+      <div class="keyboard">
+        <button class="calc-btn" id="one-btn" onclick="onClickNumberButtons(this.id)">1</button>
+        <button class="calc-btn" id="two-btn" onclick="onClickNumberButtons(this.id)">2</button>
+        <button class="calc-btn" id="three-btn" onclick="onClickNumberButtons(this.id)">3</button>
+        <button class="calc-btn" id="multiply-btn" onclick="onClickMultiplyButton()"><img src="../assets/multiply-ico.svg" alt="" srcset=""></button>
+        <button class="calc-btn" id="four-btn" onclick="onClickNumberButtons(this.id)">4</button>
+        <button class="calc-btn" id="five-btn" onclick="onClickNumberButtons(this.id)">5</button>
+        <button class="calc-btn" id="six-btn" onclick="onClickNumberButtons(this.id)">6</button>
+        <button class="calc-btn" id="division-btn" onclick="onClickDivisionButton()"><img src="../assets/divide-ico.svg" alt="" srcset=""></button>
+        <button class="calc-btn" id="seven-btn" onclick="onClickNumberButtons(this.id)">7</button>
+        <button class="calc-btn" id="eight-btn" onclick="onClickNumberButtons(this.id)">8</button>
+        <button class="calc-btn" id="nine-btn" onclick="onClickNumberButtons(this.id)">9</button>
+        <button class="calc-btn" id="plus-btn" onclick="onClickPlusButton()">+</button>
+        <button class="calc-btn" id="zero-btn" onclick="onClickNumberButtons(this.id)">0</button>
+        <button class="calc-btn" id="dot-btn" onclick="onClickDotButton()">.</button>
+        <button class="calc-btn" id="equals-btn" onclick="onClickEqualsButton()">=</button>
+        <button class="calc-btn" id="minus-btn" onclick="onClickMinusButton()">-</button>
+      </div>
+      <div class="clear-btn-area">
+        <button class="clear" onclick="onClickClearButton()">CLEAR</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/calculator.js"></script>
+</body>
+</html>
