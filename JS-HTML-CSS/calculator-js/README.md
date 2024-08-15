@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-<p align="center">Calendar application using JavaScript, HTML and CSS.</p>
+<p align="center">Aplicação de calculadora utilizando JavaScript, HTML and CSS.</p>
 
 ## Como rodar o projeto
 
