@@ -42,7 +42,7 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
     calculadora.java
 
     A pasta LEGACY possui projetos mais antigos com uma lógica mais complexa e que não serão 
-    atualizados a finalização além de poderem não possuir arquivos README próprios.
+    atualizados após a finalização além de poderem não possuir arquivos README próprios.
 
 5 - Sobre desenvolvimento e atualizações nos projetos
 
