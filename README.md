@@ -60,3 +60,17 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
     do caso.
 
 ***
+
+6 - Para executar os projetos será necessário clonar o repositório com o seguinte comando
+
+```
+  git clone https://github.com/VictorBortolotto/study-projects.git
+```
+
+<h2 style="border: none">Victor Augusto Campos Bortolotto</h2>
+<img style="width: 100px; height: 100px" src="https://avatars.githubusercontent.com/u/50971139?v=4" alt=""/>
+
+</br>
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/victor-augusto-campos-bortolotto/)](https://www.linkedin.com/in/victor-augusto-campos-bortolotto/) 
+[![Gmail Badge](https://img.shields.io/badge/-victorcamposbortolottowork@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:victorcamposbortolottowork@gmail.com)](mailto:victorcamposbortolottowork@gmail.com)
