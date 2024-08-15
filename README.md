@@ -1,8 +1,7 @@
 <h1 align="center">STUDY PROJECTS</h1>
 
 <p align="center">
-Este repositório é uma unificação de outros repositórios de projetos de estudo em diferentes linguagens 
-de programação, seu principal objetivo é o compartilhamento de conhecimento prático e teórico.
+Este repositório reúne diversos repositórios de projetos em diferentes tecnologias, com o objetivo principal de compartilhar conhecimento.
 </p>
 
 <h1 align="center">AVISOS IMPORTANTES</h1>
