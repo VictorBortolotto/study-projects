@@ -41,6 +41,9 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
     dentro de uma pasta chamada Java com o projeto em uma pasta com o nome 
     calculadora.java
 
+    A pasta LEGACY possui projetos mais antigos que não serão atualizados ou terão arquivos README 
+    próprios.
+
 5 - Sobre desenvolvimento e atualizações nos projetos
 
     Os projetos serão desenvolvidos individualmente e as atualizações 
