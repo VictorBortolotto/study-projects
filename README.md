@@ -1,11 +1,16 @@
 <h1 align="center">STUDY PROJECTS</h1>
 
+***
+
 <p align="center">
 Este repositório reúne diversos repositórios de projetos em diferentes tecnologias, com o objetivo principal de compartilhar conhecimento.
 </p>
 
+***
+
 <h1 align="center">AVISOS IMPORTANTES</h1>
 
+***
 
 1 - README.md
 
@@ -14,6 +19,8 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
     em questão, deverão estar descritas os níveis de dificuldade, objetivo do projeto, 
     conteúdos abordados, tecnologias utilizadas e demais informações que forem de 
     interesse.
+
+***
 
 2 - Níveis de dificuldade
 
@@ -30,6 +37,8 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
         serão por padrão projetos maiores e que envolvem um nível maior de complexidade
         além de utilizarem frameworks em diferentes partes da aplicação.
 
+***
+
 3 - Funcionamento dos repositórios e distribuição dos projetos
 
     Os projetos serão colocados dentro de um repositório principal que 
@@ -44,6 +53,8 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
     A pasta LEGACY possui projetos mais antigos com uma lógica mais complexa e que não serão 
     atualizados após a finalização além de poderem não possuir arquivos README próprios.
 
+***
+
 5 - Sobre desenvolvimento e atualizações nos projetos
 
     Os projetos serão desenvolvidos individualmente e as atualizações 
@@ -51,3 +62,5 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
 
     Atualizações após a finalização dos projetos podem não acontecer a depender 
     do caso.
+
+***
