@@ -1,7 +1,5 @@
 <h1 align="center">STUDY PROJECTS</h1>
 
-***
-
 <p align="center">
 Este repositório reúne diversos repositórios de projetos em diferentes tecnologias, com o objetivo principal de compartilhar conhecimento.
 </p>
@@ -9,8 +7,6 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
 ***
 
 <h1 align="center">AVISOS IMPORTANTES</h1>
-
-***
 
 1 - README.md
 
