@@ -2,10 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/board.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Board</title>
 </head>
 <body>
-  
+  <script src="../js/board.js"></script>
+  <script src="../utils/utils.js"></script>
+  <script>verifyGameConfiguration()</script>
+  <div class="container">
+    <div class="player-area">
+      <div class="player-piece"><img src="" alt="" class="piece-img" id="player-1-area" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+    <div class="board">
+      <div class="numberline">
+        <div class="divisor"></div>
+        <div class="numbersline">
+          <ol class="numbers">
+            <li class="number">1</li>
+            <li class="number">2</li>
+            <li class="number">3</li>
+          </ol>
+        </div>
+      </div>
+      <div class="charline">
+        <ol class="chars">
+          <li class="char">A</li>
+          <li class="char">B</li>
+          <li class="char">C</li>
+        </ol>
+      </div>
+      <ol class="houses">
+        <li class="house" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="5" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="6" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="7" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="8" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" id="9" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+      </ol>
+    </div>
+    <div class="player-area">
+      <div class="player-piece"><img src="" alt="" class="piece-img" id="player-2-area" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+  </div>
+  <script>fillPieces()</script>
 </body>
 </html>

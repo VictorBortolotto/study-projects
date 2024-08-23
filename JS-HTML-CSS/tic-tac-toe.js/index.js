@@ -6,6 +6,10 @@ const port = 3000
 
 app.use(express.static(__dirname + '/src/public'))
 
+app.get('/board', (req, res) => {
+  res.sendFile(__dirname + '/src/public/pages/board.html')
+})
+
 app.get('/home', (req, res) => {
   res.sendFile(__dirname + '/src/public/pages/home.html')
 })
