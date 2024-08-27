@@ -20,6 +20,7 @@ const configurationCardComponent = () => {
 const openConfigurationCard = () => {
   let mainContainer = document.getElementById('main-container')
   mainContainer.innerHTML += configurationCardComponent()
+  fillOptionsWhenIsCardOpen()
 }
 
 const onClickChoosePiece = (id) => {
@@ -49,4 +50,17 @@ const definePlayerPiece = (imageSrc) => {
   }
 
   return piece
+}
+
+const fillOptionsWhenIsCardOpen = () => {
+  let player1 = document.getElementById('piece-player-1')
+  let player2 = document.getElementById('piece-player-2')
+  if (sessionStorageLength() === 0) return
+  if (getFormSessionStorage('player-1') === 'x') {
+    player1.src = '../assets/x.svg'
+    player2.src = '../assets/circle.svg'
+  } else {
+    player1.src = '../assets/circle.svg'
+    player2.src = '../assets/x.svg'
+  }
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../styles/board.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../components/style/snackbar.css">
   <title>Board</title>
 </head>
 <body>
@@ -33,21 +34,23 @@
         </ol>
       </div>
       <ol class="houses">
-        <li class="house" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="5" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="6" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="7" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="8" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
-        <li class="house" id="9" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="1"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="2"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="3"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="4"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="5"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="6"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="7"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="8"></li>
+        <li class="house" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../assets/transparent.svg" class="piece-board-img" id="9"></li>
       </ol>
     </div>
     <div class="player-area">
       <div class="player-piece"><img src="" alt="" class="piece-img" id="player-2-area" draggable="true" ondragstart="drag(event)"></div>
     </div>
+    <div id="snackbar"></div>
   </div>
+  <script src="../components/component/snackbar.js"></script>
   <script>fillPieces()</script>
 </body>
 </html>
