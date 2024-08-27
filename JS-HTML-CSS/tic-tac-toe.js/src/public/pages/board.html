@@ -5,13 +5,14 @@
   <link rel="stylesheet" href="../styles/board.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../components/style/snackbar.css">
+  <link rel="stylesheet" href="../components/style/winner.card.css">
   <title>Board</title>
 </head>
 <body>
   <script src="../js/board.js"></script>
   <script src="../utils/utils.js"></script>
   <script>verifyGameConfiguration()</script>
-  <div class="container">
+  <div class="container" id="board-container">
     <div class="player-area">
       <div class="player-piece"><img src="" alt="" class="piece-img" id="player-1-area" draggable="true" ondragstart="drag(event)"></div>
     </div>
@@ -51,6 +52,7 @@
     <div id="snackbar"></div>
   </div>
   <script src="../components/component/snackbar.js"></script>
+  <script src="../components/component/winner.card.js"></script>
   <script>fillPieces()</script>
 </body>
 </html>
