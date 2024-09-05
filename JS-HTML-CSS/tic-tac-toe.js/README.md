@@ -4,6 +4,28 @@
 
 <p align="center">Aplicação de jogo da velha utilizando JavaScript, HTML e CSS.</p>
 
+## Ferramentas utilizadas
+
+<ul>
+  <li><p>JavaScript</p></li>
+  <li><p>CSS</p></li>
+  <li><p>HTML</p></li>
+</ul>
+
+## Conteúdos abordados
+
+<ul>
+  <li><p>Utilização do JavaScript no frontend</p></li>
+  <li><p>Criação de componentes com JavaScript</p></li>
+  <li><p>Estruturação e organização de projeto</p></li>
+  <li><p>Navegação por páginas com JavaScript</p></li>
+  <li><p>Utilização de toast</p></li>
+  <li><p>Lógica de programção</p></li>
+  <li><p>Estilizações com CSS</p></li>
+  <li><p>Utilização de LocalStorage para armazenar informações</p></li>
+  <li><p>Utilização de Drag and Drop</p></li>
+</ul>
+
 ## Como rodar o projeto
 
 <h6><p>1 - Ir para o diretório principal</p></h6>
@@ -26,3 +48,17 @@
 ## Entendendo o projeto
 
 <p>Após seguir todos os passos o projeto será executado na porta 3000, e assim você poderá ir para http://localhost:3000/home</p>
+
+## Imagens do Projeto
+
+<h2>Tela Inicial</h2>
+![alt text](image.png)
+
+<h2>Tela de configuração</h2>
+![alt text](image-1.png)
+
+<h2>Tabuleiro</h2>
+![alt text](image-2.png)
+
+<h2>Tela de ganhador</h2>
+![alt text](image-3.png)

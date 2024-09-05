@@ -52,5 +52,4 @@
 <p>Após seguir todos os passos o projeto será executado na porta 3000, e assim você poderá ir para http://localhost:3000</p>
 
 ## Imagem do projeto
-
 ![alt text](image.png)

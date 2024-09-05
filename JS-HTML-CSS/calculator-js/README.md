@@ -4,6 +4,24 @@
 
 <p align="center">Aplicação de calculadora utilizando JavaScript, HTML e CSS.</p>
 
+## Ferramentas utilizadas
+
+<ul>
+  <li><p>JavaScript</p></li>
+  <li><p>CSS</p></li>
+  <li><p>HTML</p></li>
+</ul>
+
+## Conteúdos abordados
+
+<ul>
+  <li><p>Utilização do JavaScript no frontend</p></li>
+  <li><p>Estruturação e organização de projeto</p></li>
+  <li><p>Lógica de programção</p></li>
+  <li><p>Estilizações com CSS</p></li>
+  <li><p>Responsividade</p></li>
+</ul>
+
 ## Como rodar o projeto
 
 <h6><p>1 - Ir para o diretório principal</p></h6>
@@ -26,3 +44,7 @@
 ## Entendendo o projeto
 
 <p>Após seguir todos os passos o projeto será executado na porta 3000, e assim você poderá ir para http://localhost:3000/calculator</p>
+
+## Imagem do projeto
+
+![alt text](image.png)
