@@ -4,6 +4,16 @@
 
 <p align="center">Aplicação de calculadora utilizando TypeScript e React.</p>
 
+## Ferramentas utilizadas
+
+<ul>
+  <li><p>Lingugem: TypeScript</p></li>
+  <li><p>Biblioteca: React</p></li>
+  <li><p>Estilização: CSS</p></li>
+  <li><p>HTML</p></li>
+</ul>
+
+
 ## Conteúdos abordados
 
 <ul>
