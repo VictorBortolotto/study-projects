@@ -12,9 +12,8 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
 
     Sempre ler os arquivos README presentes nos projetos, nestes arquivos deverão estar
     todas as descrições necessárias para entendimento e funcionamento do projeto
-    em questão, deverão estar descritas os níveis de dificuldade, objetivo do projeto, 
-    conteúdos abordados, tecnologias utilizadas e demais informações que forem de 
-    interesse.
+    em questão, deverão estar descritos os objetivos do projeto, conteúdos abordados, 
+    tecnologias utilizadas e demais informações que forem de interesse.
 
 ***
 
