@@ -7,9 +7,9 @@
 ## Ferramentas utilizadas
 
 <ul>
-  <li><p>Lingugem: TypeScript</p></li>
-  <li><p>Biblioteca: React</p></li>
-  <li><p>Estilização: CSS</p></li>
+  <li><p>TypeScript</p></li>
+  <li><p>React</p></li>
+  <li><p>CSS</p></li>
   <li><p>HTML</p></li>
 </ul>
 
