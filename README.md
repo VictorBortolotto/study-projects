@@ -31,7 +31,7 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
     A pasta LEGACY possui projetos mais antigos com uma lógica mais complexa e que não serão 
     atualizados após a finalização além de poderem não possuir arquivos README próprios.
 
-    Observação: Poderão haver projetos com o mesmo tema em diferentes pasta porém 
+    Observação: Poderão haver projetos com o mesmo tema em diferentes pastas porém 
     escritos em diferentes linguagens, um exemplo serão projetos de calculadora.
 
 ***
