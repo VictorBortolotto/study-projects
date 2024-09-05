@@ -52,13 +52,17 @@
 ## Imagens do Projeto
 
 <h2>Tela Inicial</h2>
+
 ![alt text](image.png)
 
 <h2>Tela de configuração</h2>
+
 ![alt text](image-1.png)
 
 <h2>Tabuleiro</h2>
+
 ![alt text](image-2.png)
 
 <h2>Tela de ganhador</h2>
+
 ![alt text](image-3.png)
