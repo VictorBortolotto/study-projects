@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../component.style/Calculator.css'
 import { Display } from "./Display";
 import Keyboard from "./Keyboard";
+import Button from "../common/common.component/Button";
 
 export default function Calculator() {
   const [text, setText] = useState('');

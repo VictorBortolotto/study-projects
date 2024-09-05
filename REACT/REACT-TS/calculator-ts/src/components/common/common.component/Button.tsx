@@ -4,7 +4,9 @@ import '../common.component.style/Button.css'
 type ButtonStyleProps = {
   background?: string,
   color?: string,
-  border?: string 
+  border?: string,
+  width?: string,
+  height?: string
 }
 
 type ButtonProps = {

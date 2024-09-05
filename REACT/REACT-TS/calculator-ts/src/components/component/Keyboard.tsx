@@ -14,18 +14,44 @@ export default function Keyboard({ displayText, setText }: KeyboardProps) {
   };
 
   const handleOnClickEquals = () => {
+    if (!isLastCharacterANumber()) return 
     displayText = onChangeSignal()
-    setText(eval(displayText))
+    let result = ""
+    try {
+      result = eval(displayText.toString())
+    } catch (e) {
+      setText('Error on ' + displayText)
+      return
+    }
+    setText(result.toString())
+  }
+
+  const hancleOnClickClear = () => {
+    setText('')
+  }
+
+  const hancleOnClickBackspace = () => {
+    displayText = displayText.toString().substring(0, displayText.toString().length - 1)
+    setText(displayText)
   }
 
   const onChangeSignal = () => {
     if (!displayText) return ''
-    displayText = displayText.replace('X', '*')
+    displayText = displayText.replaceAll('X', '*')
     return displayText
+  }
+
+  const isLastCharacterANumber = () => {
+    let character = displayText.toString().substring(displayText.toString().length - 1, displayText.toString().length);
+    return ['.', '(', '+', '-', '/', 'X'].indexOf(character) < 0
   }
 
   return (
     <div className="Keyboard">
+      <Button text="AC" onClick={hancleOnClickBackspace} style={{background: 'transparent', color: 'white', border: 'solid white 1px'}}></Button>
+      <Button text="C" onClick={hancleOnClickClear} style={{background: 'transparent', color: 'white', border: 'solid white 1px'}}></Button>
+      <Button text="(" onClick={handleButtonClick} style={{background: 'transparent', color: 'white', border: 'solid white 1px'}}></Button>
+      <Button text=")" onClick={handleButtonClick} style={{background: 'orange', color: 'white'}}></Button>
       <Button text="1" onClick={handleButtonClick} style={{background: 'transparent', color: 'white', border: 'solid white 1px'}}></Button>
       <Button text="2" onClick={handleButtonClick} style={{background: 'transparent', color: 'white', border: 'solid white 1px'}}></Button>
       <Button text="3" onClick={handleButtonClick} style={{background: 'transparent', color: 'white', border: 'solid white 1px'}}></Button>
