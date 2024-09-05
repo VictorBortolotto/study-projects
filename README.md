@@ -18,24 +18,7 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
 
 ***
 
-2 - Níveis de dificuldade
-
-    Os níveis de dificuldade estarão presentes em todos os arquivos README dos projetos e
-    serão divididos de 0 a 3, sendo:
- 
-    0 - Novato - Projetos simples sem complexidade pratica ou teórica.
-    1 - Iniciante - Projetos simples porém com lógica mais complexa e 
-        alguns poucos conceitos teóricos.
-    2 - Avançado - Projetos mais complexos que podem abordar mais conteúdos práticos 
-        e teóricos além de utilizarem diferentes linguagens em um mesmo projeto e     
-        utilização de alguns frameworks.	
-    3 - Expert - Projetos complexos com utilização de diferentes conceitos e tecnologias
-        serão por padrão projetos maiores e que envolvem um nível maior de complexidade
-        além de utilizarem frameworks em diferentes partes da aplicação.
-
-***
-
-3 - Funcionamento dos repositórios e distribuição dos projetos
+2 - Funcionamento dos repositórios e distribuição dos projetos
 
     Os projetos serão colocados dentro de um repositório principal que 
     terá o nome da linguagem ou framework utilizados e dentro deste estarão 
@@ -51,7 +34,7 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
 
 ***
 
-5 - Sobre desenvolvimento e atualizações nos projetos
+3 - Sobre desenvolvimento e atualizações nos projetos
 
     Os projetos serão desenvolvidos individualmente e as atualizações 
     podem não ser constantes, porém os projetos sempre serão finalizados.
@@ -61,7 +44,7 @@ Este repositório reúne diversos repositórios de projetos em diferentes tecnol
 
 ***
 
-6 - Para executar os projetos será necessário clonar o repositório com o seguinte comando
+4 - Para executar os projetos será necessário clonar o repositório com o seguinte comando
 
 ```
   git clone https://github.com/VictorBortolotto/study-projects.git

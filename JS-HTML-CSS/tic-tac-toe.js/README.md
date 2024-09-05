@@ -1,9 +1,5 @@
 <h1 align="center">Tic Tac Toe JS</h1>
 
-## Dificuldade 
-
-<p>0 - Novato</p>
-
 ## Descrição do Projeto
 
 <p align="center">Aplicação de jogo da velha utilizando JavaScript, HTML e CSS.</p>

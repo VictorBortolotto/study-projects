@@ -1,11 +1,5 @@
 <h1 align="center">Calculator JS</h1>
 
-## Dificuldade 
-
-<p>0 - Novato</p>
-
-
-
 ## Descrição do Projeto
 
 <p align="center">Aplicação de calculadora utilizando JavaScript, HTML e CSS.</p>
