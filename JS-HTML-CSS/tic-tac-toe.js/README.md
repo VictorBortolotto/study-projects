@@ -2,7 +2,7 @@
 
 ## Dificuldade 
 
-<p align="center">Iniciante</p>
+<p align="center">0 - Novato</p>
 
 ## Descrição do Projeto
 
