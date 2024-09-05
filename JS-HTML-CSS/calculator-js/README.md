@@ -2,7 +2,7 @@
 
 ## Dificuldade 
 
-<p align="center">0 - Novato</p>
+<p>0 - Novato</p>
 
 
 
