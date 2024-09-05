@@ -1,0 +1,24 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 80%;
+  border: solid black 1px;
+  background-color: rgb(88, 88, 88);
+  border-radius: 5px;
+}
+
+.Container .Display-Area {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  border-bottom: rgb(187, 187, 187) solid 1px;
+}
+
+.Container .Keyboard-Area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
