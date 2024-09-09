@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../components/component.style/card.task.component.css">
+  <link rel="stylesheet" href="../components/component.style/new.task.card.component.css">
+  <link rel="stylesheet" href="../components/component.style/snackbar.css">
+  <title>To-Do-List</title>
+</head>
+<body>
+  <div class="container" id="main">
+    <header class="header"></header>
+    <nav class="nav">
+      <ul class="options">
+        <li class="menu-option"><button class="option" onclick="onClickNewTask()">NEW</button></li>
+        <li class="menu-option"><button class="option" onclick="onClickPending()">PENDING</button></li>
+        <li class="menu-option"><button class="option" onclick="onClickDone()">DONE</button></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="task-headers">
+        <div class="task-header-content">
+          <div class="task-header-name">NAME</div>
+          <div class="task-header-description">DESCRIPTION</div>
+          <div class="task-header-status">STATUS</div>
+          <div class="task-header-actions">ACTIONS</div>
+        </div>
+      </div>
+      <div class="task-content">
+        <ul class="task-list" id="tasks">
+          
+        </ul>
+      </div>
+      <div class="task-footer">
+        <button class="task-footer-buttons" onclick="onClickButtonPrevious()"><img src="../../assets/arrow-left.svg" alt=""></button>
+        <div class="buttons-divider">/</div>
+        <button class="task-footer-buttons" onclick="onClickButtonNext()"><img src="../../assets/arrow-right.svg" alt=""></button>
+      </div>
+    </section>
+    <div id="new-task-card-area"></div>
+  </div>
+  <script src="../js/task.list.js"></script>
+  <script src="../components/component/snackbar.js"></script>
+  <script src="../components/component/card.task.component.js"></script>
+  <script src="../components/component/new.task.card.component.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  border: solid rgb(207, 207, 207) 1px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-name {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1%;
+  width: 15%;
+  height: 100%;
+}
+
+.task-desc {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 55%;
+  height: 100%;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 100%;
+}
+
+.task-status {
+  height: 23%;
+  width: 100%;
+}
+
+.buttons-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 20%;
+  height: 100%;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.task-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 60%;
+  border: solid rgb(207, 207, 207) 1px;
+  border-radius: 5px;
+  background-color: rgb(109, 109, 248);
+}
+
+.task-edit:hover {
+  background-color: rgb(147, 147, 250);
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.task-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 60%;
+  border: solid rgb(207, 207, 207) 1px;
+  border-radius: 5px;
+  background-color: rgb(247, 99, 99);
+}
+
+.task-remove:hover {
+  background-color: rgb(250, 148, 148);
+}

@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: 'header header'
+  'nav section'
+  'nav section';
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 10% 90%;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgb(126, 126, 255);
+  border-bottom: solid rgb(207, 207, 207) 1px;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+  row-gap: 1%; 
+  padding: 3% 3% 3% 3%;
+  border-right: solid rgb(207, 207, 207) 1px;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(190, 190, 190);
+  outline: none;
+  border: none;
+}
+
+.option:hover {
+  color: white;
+  background: rgb(126, 126, 255);
+  border: solid rgb(207, 207, 207) 1px;
+  border-radius: 5px;
+}
+
+.task-headers {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.task-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 98%;
+  height: 98%;
+  list-style: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+  row-gap: 1%; 
+}
+
+.task-header-content {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 90%;
+  border: solid rgb(207, 207, 207) 1px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-header-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1%;
+  height: 100%;
+  width: 10%;
+}
+
+.task-header-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+}
+
+.task-header-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 100%;
+}
+
+.task-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+
+.task-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  column-gap: 1%;
+}
+
+.buttons-divider {
+  color: #7e7eff;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  background: white;
+}
