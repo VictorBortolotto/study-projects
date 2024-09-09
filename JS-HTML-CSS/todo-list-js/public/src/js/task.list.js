@@ -67,8 +67,6 @@ const onClickPending = () => {
 }
 
 const onClickButtonNext = () => {
-  let newTaskCardArea = document.getElementById('main')
-  newTaskCardArea.innerHTML += '<div id="snackbar"></div>'
   pageNumber += 1
   if (pageNumber > pages.length - 1) {
     pageNumber -= 1
