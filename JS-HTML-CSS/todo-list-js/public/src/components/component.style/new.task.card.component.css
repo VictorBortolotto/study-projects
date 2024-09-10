@@ -136,3 +136,14 @@
   background: rgb(130, 255, 130);
   color: white;
 }
+
+#save-task-button {
+  display: none;
+  background: rgb(62, 245, 62);
+  color: white;
+}
+
+#save-task-button:hover {
+  background: rgb(130, 255, 130);
+  color: white;
+}

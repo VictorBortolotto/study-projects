@@ -13,6 +13,7 @@ const createWindow = () => {
     autoHideMenuBar: true,
   })
 
+  //win.webContents.openDevTools()
   win.loadFile('./public/src/pages/index.html')
 }
 

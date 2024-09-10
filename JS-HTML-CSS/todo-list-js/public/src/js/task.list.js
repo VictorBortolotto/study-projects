@@ -16,6 +16,15 @@ const addTaskInTaskList = (task) => {
 const addTaskToLayout = () => {
   let tasks = document.getElementById('tasks')
   tasks.innerHTML = ''
+  if (pages.length === 0) {
+    pageNumber = 0
+    return
+  }
+
+  if (pages[pageNumber] === undefined && pageNumber > 0) {
+    pageNumber = 0
+  }
+
   pages[pageNumber].map((taskPage) => {
     if (taskPage.status === statusToShow) {
       tasks.innerHTML += taskCardComponent(taskPage)
@@ -25,6 +34,7 @@ const addTaskToLayout = () => {
 
 const filterTasks = () => {
   let page = []
+  pages = []
   let countDataPerPage = 0;
   let countPages = 0
   taskList.filter((task) => {
@@ -39,10 +49,6 @@ const filterTasks = () => {
       }
     }
   })
-  
-}
-
-const removeTaskFromTaskList = () => {
   
 }
 

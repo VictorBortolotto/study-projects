@@ -1,7 +1,10 @@
-const newTaskCardComponent = () => {
+var idTask = 0
+
+const newTaskCardComponent = (id) => {
+  idTask = id
   return `
     <div class="new-task-card">
-      <div class="card-header">NEW TASK</div>
+      <div class="card-header" id="card-header-text">NEW TASK</div>
       <div class="card-content">
         <label for="" class="task-card-label">Name: </label>
         <input type="text" class="task-card-input" id="task-card-name">
@@ -15,16 +18,17 @@ const newTaskCardComponent = () => {
       </div>
       <div class="card-footer">
         <button class="new-task-card-button" id="create-task-button" onclick="createTask()">CREATE</button>
+        <button class="new-task-card-button" id="save-task-button" onclick="onClickSave()">SAVE</button>
         <button class="new-task-card-button" id="cancel-create-task-button" onclick="onClickCancel()">CANCEL</button>
       </div>
     </div>
   `
 }
 
-const onClickNewTask = () => {
+const onClickNewTask = (id) => {
   let newTaskCardArea = document.getElementById('new-task-card-area')
   newTaskCardArea.style.display = 'flex'
-  newTaskCardArea.innerHTML = newTaskCardComponent()
+  newTaskCardArea.innerHTML = newTaskCardComponent(id)
   newTaskCardArea.innerHTML += '<div id="snackbar"></div>'
 }
 
@@ -56,7 +60,36 @@ const createTask = () => {
     status: taskStatus.checked
   }
 
-  task.id = taskList.length === 0 ? 1 : taskList[taskList.length - 1].id + 1
+  if (taskList.length === 0) {
+    task.id = 1 
+  } else {
+    task.id = taskList[taskList.length - 1].id + 1
+  } 
   addTaskInTaskList(task)
+  onClickCancel()
+}
+
+const onClickSave = () => {
+  let taskName = document.getElementById('task-card-name').value
+  let taskDescription = document.getElementById('task-card-description').value
+  let taskStatus = document.getElementById('task-checkbox')
+  
+  let task = {
+    id: idTask,
+    name: taskName,
+    description: taskDescription,
+    status: taskStatus.checked
+  }
+
+  taskList.map((taskinList) => {
+    if (taskinList.id === idTask) {
+      taskinList.name = task.name
+      taskinList.description = task.description
+      taskinList.status = task.status
+    }
+  })
+
+  filterTasks()
+  addTaskToLayout()
   onClickCancel()
 }

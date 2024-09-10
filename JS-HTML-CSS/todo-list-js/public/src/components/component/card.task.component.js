@@ -6,7 +6,7 @@ const taskCardComponent = (task) => {
       ${checkbox(task.status, task.id)}
       <div class="buttons-task">
         <div class="edit">
-          <button class="task-edit"><img src="../../assets/edit.svg" alt=""></button>
+          <button class="task-edit" id="task-edit-${task.id}" onclick="onClickEdit(this.id)"><img src="../../assets/edit.svg" alt=""></button>
         </div>
         <div class="remove"><button class="task-remove" id="task-remove-${task.id}" onclick="onClickRemove(this.id)"><img src="../../assets/trash.svg" alt=""></button></div>
       </div>
@@ -30,6 +30,9 @@ const onClickChecked = (id) => {
     let card = document.getElementById('task-' + taskId)
     card.remove()
   }
+
+  filterTasks()
+  addTaskToLayout()
 }
 
 const checkbox = (taskStatus, taskId) => {
@@ -41,7 +44,49 @@ const checkbox = (taskStatus, taskId) => {
 }
 
 const onClickRemove = (id) => {
-  let idTaskCard = id.replace("task-remove-", "")
-  let card = document.getElementById("task-" + idTaskCard)
+  let idTask = parseInt(id.replace("task-remove-", ""))
+  let card = document.getElementById("task-" + idTask)
+  let newList = []
+  taskList.map((task) => {
+    if (task.id !== idTask) { 
+      newList.push(task)
+    }
+  })
+  taskList = newList
   card.remove()
+  filterTasks()
+  addTaskToLayout()
+}
+
+const onClickEdit = (id) => {
+  let idTask = parseInt(id.replace("task-edit-", ""))
+  let task = {}
+  taskList.map((taskinList) => {
+    if (taskinList.id === idTask) task = taskinList 
+  })
+
+  onClickNewTask(idTask)
+
+  let cardHeaderText = document.getElementById('card-header-text')
+  cardHeaderText.textContent = 'EDIT TASK'
+  let createTaskButton = document.getElementById('create-task-button')
+  createTaskButton.style.display = 'none'
+  let saveTaskButton = document.getElementById('save-task-button')
+  saveTaskButton.style.display = "flex"
+
+  let taskName = document.getElementById('task-card-name')
+  let taskDescription = document.getElementById('task-card-description')
+  let taskStatus = document.getElementById('task-checkbox')
+  let taskStatusDesc = document.getElementById('task-status-text')
+    
+  taskName.value = task.name
+  taskDescription.value = task.description
+  taskStatus.checked = task.status
+
+  if (task.status) {
+    taskStatusDesc.innerHTML = "DONE"
+  } else {
+    taskStatusDesc.innerHTML = "PENDING"
+  }
+
 }
