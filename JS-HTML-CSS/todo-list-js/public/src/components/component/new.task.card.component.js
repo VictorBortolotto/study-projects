@@ -53,6 +53,11 @@ const createTask = () => {
   let taskDescription = document.getElementById('task-card-description').value
   let taskStatus = document.getElementById('task-checkbox')
 
+  if (taskName === '' || taskDescription === '') {
+    showSnackbar('orange', 'Please fill all the fields!')
+    return
+  }
+
   let task = {
     id: 0,
     name: taskName,
@@ -74,6 +79,11 @@ const onClickSave = () => {
   let taskDescription = document.getElementById('task-card-description').value
   let taskStatus = document.getElementById('task-checkbox')
   
+  if (taskName === '' || taskDescription === '') {
+    showSnackbar('orange', 'Please fill all the fields!')
+    return
+  }
+
   let task = {
     id: idTask,
     name: taskName,
