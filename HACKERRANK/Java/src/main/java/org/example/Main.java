@@ -6,19 +6,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Hackerrank first challange
-        //firstChallange();
+        firstChallange();
 
         //Hackerrank second challange
-        //secondChallange();
+        secondChallange();
 
         //Hackerrank third challange
-        //thirdChallange();
+        thirdChallange();
 
         //Hackerrank fourth challange
-        //fourthChallange();
+        fourthChallange();
 
         //Hackerrank fifth challange
-        //fifthChallange();
+        fifthChallange();
 
         //Hackerrank fifth challange
         sixthChallange();
