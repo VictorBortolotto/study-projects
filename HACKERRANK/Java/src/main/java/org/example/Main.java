@@ -2,33 +2,31 @@ package org.example;
 
 import org.example.easyChallanges.EasyChallanges;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         //Hackerrank first challange
-        EasyChallanges.firstChallange();
+        //EasyChallanges.firstChallange();
 
         //Hackerrank second challange
-        EasyChallanges.secondChallange();
+        //EasyChallanges.secondChallange();
 
         //Hackerrank third challange
-        EasyChallanges.thirdChallange();
+        //EasyChallanges.thirdChallange();
 
         //Hackerrank fourth challange
-        EasyChallanges.fourthChallange();
+        //EasyChallanges.fourthChallange();
 
         //Hackerrank fifth challange
-        EasyChallanges.fifthChallange();
+        //EasyChallanges.fifthChallange();
 
         //Hackerrank sixth challange
-        EasyChallanges.sixthChallange();
+        //EasyChallanges.sixthChallange();
 
         //Hackerrank seventh challange
-        EasyChallanges.seventhChallange();
+        //EasyChallanges.seventhChallange();
 
         //Hackerrank eigth challange
-        EasyChallanges.seventhChallange();
+        EasyChallanges.eigthChallange();
+
     }
 }
