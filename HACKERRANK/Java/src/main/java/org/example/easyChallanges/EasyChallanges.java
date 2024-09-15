@@ -235,7 +235,7 @@ public class EasyChallanges {
         scanner.close();
     }
 
-    /*
+    /*  SIXTH CHALLANGE
         Objective
         In this challenge, we're going to use loops to help us do some simple math.
 
@@ -282,7 +282,7 @@ public class EasyChallanges {
         scanner.close();
     }
 
-    /*
+    /*  SEVENTH CHALLANGE
         We use the integers a, b, and  to create the following series:
 
         (a + 2^0 * b), (a + 2^0 * b),..., (a + 2^0 * b * b + ... + 2^n-1 * b)
@@ -328,6 +328,14 @@ public class EasyChallanges {
                 finalResult += result + " ";
             }
             System.out.println(finalResult);
+        }
+        scanner.close();
+    }
+
+    public static void eigthChallange() {
+        Scanner scanner = new Scanner(System.in);
+        int q = scanner.nextInt();
+        for (int i = 1; i <= q; i++) {
         }
         scanner.close();
     }
