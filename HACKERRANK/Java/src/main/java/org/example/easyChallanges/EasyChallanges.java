@@ -1,5 +1,7 @@
 package org.example.easyChallanges;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -413,4 +415,86 @@ public class EasyChallanges {
         }
         scanner.close();
     }
+
+    /*  NINTH CHALLANGE
+        The challenge here is to read  lines of input until you reach EOF, then number and print all  lines of content.
+
+        Hint: Java's Scanner.hasNext() method is helpful for this problem.
+
+        Input Format
+
+        Read some unknown  lines of input from stdin(System.in) until you reach EOF; each line of input contains a non-empty String.
+
+        Output Format
+
+        For each line, print the line number, followed by a single space, and then the line content received as input.
+
+        Sample Input
+
+        Hello world
+        I am a file
+        Read me until end-of-file.
+        Sample Output
+
+        1 Hello world
+        2 I am a file
+        3 Read me until end-of-file.
+    */
+    public static void ninthChallange() {
+        Scanner scanner = new Scanner(System.in);
+        int countLine = 1;
+        String finalText = "";
+        while (scanner.hasNext()) {
+            String text = scanner.nextLine();
+            finalText += text + "\n";
+        }
+        scanner = new Scanner(finalText);
+
+        while (scanner.hasNext()) {
+            String line = scanner.nextLine();
+            System.out.println(countLine + " " + line);
+            countLine += 1;
+        }
+    }
+
+    /*  TENTH CHALLANGE
+        Static initialization blocks are executed when the class is loaded, and you can initialize static variables in those blocks.
+
+        It's time to test your knowledge of Static initialization blocks. You can read about it here.
+
+        You are given a class Solution with a main method. Complete the given code so that it
+         outputs the area of a parallelogram with breadth B and height H. You should read the variables from the standard input.
+
+        If B <= 0 or H <= 0, the output should be "java.lang.Exception: Breadth and height must be positive" without quotes.
+
+        Input Format
+
+        There are two lines of input. The first line contains : the breadth of the parallelogram. The next line contains : the height of the parallelogram.
+
+        Constraints
+
+        -100 <= B <= 100
+        -100 <= H <= 100
+
+        Output Format
+
+        If both values are greater than zero, then the main method must output the area of the parallelogram.
+        Otherwise, print "java.lang.Exception: Breadth and height must be positive" without quotes.
+     */
+    public static void tenthChallange() {
+        Scanner scanner = new Scanner(System.in);
+        try {
+            int b = scanner.nextInt();
+            int h = scanner.nextInt();
+
+            if (h <= 0 || b <= 0) throw new Exception("java.lang.Exception: Breadth and height must be positive");
+
+            int area = b * h;
+
+            System.out.println(area);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 }
