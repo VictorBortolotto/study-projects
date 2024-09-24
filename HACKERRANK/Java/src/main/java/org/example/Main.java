@@ -38,5 +38,13 @@ public class Main {
         //Hackerrank eleventh challange
         EasyChallanges2.eleventhChallange();
 
+        //Hackerrank twelfth challange
+        EasyChallanges2.twelfthChallange();
+
+        //Hackerrank thirteenth challange
+        EasyChallanges2.thirteenthChallange();
+
+        //Hackerrank fourteenth challange
+        EasyChallanges2.fourteenthChallange();
     }
 }

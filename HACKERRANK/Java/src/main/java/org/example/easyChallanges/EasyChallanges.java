@@ -1,7 +1,5 @@
 package org.example.easyChallanges;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Locale;
 import java.util.Scanner;
 
