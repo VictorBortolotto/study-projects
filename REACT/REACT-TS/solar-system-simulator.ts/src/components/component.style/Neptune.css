@@ -1,0 +1,11 @@
+.neptune {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(113, 113, 254);
+  border-radius: 100%;
+  height: 6%;
+  width: 6%;
+  transform: translate(-120%, -60%);
+}

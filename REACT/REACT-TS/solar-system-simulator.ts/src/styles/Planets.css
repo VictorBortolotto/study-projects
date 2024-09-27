@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url('../../src/assets/space.jpg');
+}
+
+.trajectory-mercury {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 80%;
+  width: 85%;
+  margin-right: 10%;
+}
+
+.trajectory-venus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 75%;
+  width: 75%;
+  margin-right: 10%;
+}
+
+.trajectory-earth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 75%;
+  width: 75%;
+  margin-right: 10%;
+}
+
+.trajectory-mars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 80%;
+  width: 90%;
+  margin-right: 10%;
+}
+
+.trajectory-jupiter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 80%;
+  width: 110%;
+  margin-right: 10%;
+}
+
+.trajectory-saturn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 75%;
+  width: 75%;
+  margin-right: 10%;
+}
+
+.trajectory-uranus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 80%;
+  width: 80%;
+  margin-right: 5%;
+}
+
+.trajectory-neptune {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: solid rgba(255, 255, 255, 0.516) 1px;
+  border-radius: 100%;
+  height: 80%;
+  width: 40%;
+}

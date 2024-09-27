@@ -1,0 +1,10 @@
+.venus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(244, 101, 101);
+  border-radius: 100%;
+  height: 10%;
+  width: 11%;
+  transform: translate(-50%, -30%);
+}
