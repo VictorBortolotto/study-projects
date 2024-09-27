@@ -1,48 +1,45 @@
 .earth {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: rgb(102, 102, 242);
-  border-radius: 100%;
+  background: radial-gradient(circle, #0066cc 40%, #004080 100%);
+  border-radius: 50%;
   height: 10%;
   width: 11%;
   transform: translate(-70%, -50%);
-  column-gap: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.6);
 }
 
-.country-one {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Simulando continentes */
+.continent {
+  position: absolute;
+  background-color: #228B22; /* Verde para representar terras */
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Continentes individuais com diferentes posições e tamanhos */
+.continent-1 {
+  height: 30%;
   width: 20%;
-  height: 20%;
-  background: rgb(129, 222, 129);
-  border-radius: 100%;
-  margin-top: 20%;
+  top: 20%;
+  left: 10%;
+  transform: rotate(30deg);
 }
 
-.country-two {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  height: 20%;
-  background: rgb(129, 222, 129);
-  border-radius: 100%;
-  margin-bottom: 15%;
+.continent-2 {
+  height: 25%;
+  width: 18%;
+  bottom: 15%;
+  right: 8%;
+  transform: rotate(-40deg);
 }
 
-.country-three {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  height: 20%;
-  background: rgb(129, 222, 129);
-  border-radius: 100%;
-  margin-top: 10%;
-  margin-left: 5%;
+.continent-3 {
+  height: 15%;
+  width: 10%;
+  top: 50%;
+  right: 20%;
+  transform: rotate(60deg);
 }
-

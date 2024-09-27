@@ -3,9 +3,39 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: rgb(113, 113, 254);
+  background: radial-gradient(circle, #5c92d5 30%, #1d4e89 60%, #0d1c33 90%);
   border-radius: 100%;
   height: 6%;
   width: 6%;
   transform: translate(-120%, -60%);
+  box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Listras para simular as características da atmosfera de Netuno */
+.neptune-stripe {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(50% 25% at 50% 50%); /* Recorte para criar listras */
+}
+
+.neptune-stripe:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.2); /* Listra clara */
+  transform: rotate(15deg);
+}
+
+.neptune-stripe:nth-child(2) {
+  background-color: rgba(200, 200, 255, 0.3); /* Listra um pouco mais escura */
+  transform: rotate(5deg);
+}
+
+.neptune-stripe:nth-child(3) {
+  background-color: rgba(150, 150, 255, 0.4); /* Listra mais escura */
+  transform: rotate(-5deg);
+}
+
+.neptune-stripe:nth-child(4) {
+  background-color: rgba(100, 100, 200, 0.3); /* Listra escura */
+  transform: rotate(-15deg);
 }

@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(244, 101, 101);
-  border-radius: 100%;
+  background: radial-gradient(circle, #f2c200 30%, #e89f28 60%, #d98410 85%, #c47205 100%);
+  border-radius: 50%;
   height: 10%;
   width: 11%;
   transform: translate(-50%, -30%);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 200, 0, 0.6);
 }

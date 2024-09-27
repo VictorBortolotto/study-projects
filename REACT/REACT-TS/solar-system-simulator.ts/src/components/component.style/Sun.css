@@ -3,29 +3,32 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgb(255, 180, 40), rgb(255, 189, 65));
-  border-radius: 100%;
-  height: 68%;
-  width: 72%;
-  right: 5%;
+  background: radial-gradient(circle at center, #ffdd00, #ff9900 40%, #ff5e00 70%, #ff4500 85%);
+  border-radius: 50%;
+  height: 70%;
+  width: 75%;
+  right: 4%;
+  box-shadow: 0 0 30px 15px rgba(255, 204, 0, 0.8), 0 0 50px 30px rgba(255, 150, 0, 0.5);
 }
 
 .border {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to left, rgb(255, 166, 0), rgb(255, 189, 65));
-  border-radius: 100%;
+  background: radial-gradient(circle, rgba(255, 200, 50, 0.7), rgba(255, 120, 0, 0.4), transparent 70%);
+  border-radius: 50%;
   height: 90%;
   width: 90%;
+  box-shadow: 0 0 25px 10px rgba(255, 165, 0, 0.6);
 }
 
 .stains {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to left, rgb(255, 166, 0), rgb(255, 189, 65));
-  border-radius: 100%;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.5), rgba(200, 80, 0, 0.3), transparent 60%);
+  border-radius: 50%;
   height: 90%;
   width: 90%;
+  opacity: 0.7;
 }
